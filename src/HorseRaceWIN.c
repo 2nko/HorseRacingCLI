@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
+#include <windows.h>
 // global index, for simplicity's sake.
 int i;
 
@@ -13,7 +13,7 @@ int main(void){
     printf("- - - - - - - - - - -\n");
     printf("gonna proceed in %d...\n", i);
     sleep(1);
-    system("clear");
+    system("cls");
   }
 
   // initial budget: $750
@@ -56,7 +56,7 @@ int main(void){
     i++;
     if (i == 4){
       i = 0;
-      system("clear");
+      system("cls");
       printf("%s\n", title);
     }
   } while (bet < 100 || inputCheck != 1);
